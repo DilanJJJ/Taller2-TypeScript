@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Series List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Cambia el color del nombre de las series a azul */
+        .series-name {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Columna para la tabla -->
+            <div class="col-md-8">
+                <h1>TV Series</h1>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Channel</th>
+                            <th scope="col">Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series-table">
+                        <!-- Las filas de series se insertarán aquí -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Columna para mostrar el detalle de la serie -->
+            <div class="col-md-4">
+                <div id="series-card" class="card" style="display: none;">
+                    <img id="series-image" class="card-img-top" src="" alt="Series Image">
+                    <div class="card-body">
+                        <h5 id="series-title" class="card-title"></h5>
+                        <p id="series-description" class="card-text"></p>
+                        <a id="series-link" href="" class="btn btn-primary" target="_blank">Go to Series</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
